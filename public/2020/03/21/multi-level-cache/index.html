@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>多级缓存 | 布朗与茶的空间</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="以下信息及图片收集于网络， 此处仅做整合。 什么是多级缓存 广泛意义上从请求到返回结果中各个layer都可以缓存数据，从而提高反应速度  一般我们指的服务器端两级&#x2F;多级缓存框架，都是指的从进程内缓存到数据库访问前的各个级别的缓存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多级缓存">
+<meta property="og:url" content="http://browntea.club/2020/03/21/multi-level-cache/index.html">
+<meta property="og:site_name" content="布朗与茶的空间">
+<meta property="og:description" content="以下信息及图片收集于网络， 此处仅做整合。 什么是多级缓存 广泛意义上从请求到返回结果中各个layer都可以缓存数据，从而提高反应速度  一般我们指的服务器端两级&#x2F;多级缓存框架，都是指的从进程内缓存到数据库访问前的各个级别的缓存">
+<meta property="og:image" content="http://browntea.club/2020/03/21/multi-level-cache/multi-level-cache/multi-level-cache.png">
+<meta property="og:image" content="http://browntea.club/2020/03/21/multi-level-cache/multi-level-cache/multi-level-cache%201.png">
+<meta property="og:image" content="http://browntea.club/2020/03/21/multi-level-cache/multi-level-cache/multi-level-cache%202.png">
+<meta property="og:image" content="http://browntea.club/2020/03/21/multi-level-cache/multi-level-cache/multi-level-cache%203.png">
+<meta property="og:image" content="http://browntea.club/2020/03/21/multi-level-cache/multi-level-cache/multi-level-cache%204.png">
+<meta property="og:image" content="http://browntea.club/2020/03/21/multi-level-cache/multi-level-cache/multi-level-cache%205.png">
+<meta property="og:image" content="http://browntea.club/2020/03/21/multi-level-cache/multi-level-cache/multi-level-cache%206.png">
+<meta property="og:image" content="http://browntea.club/2020/03/21/multi-level-cache/multi-level-cache/multi-level-cache%207.png">
+<meta property="og:image" content="http://browntea.club/2020/03/21/multi-level-cache/multi-level-cache/multi-level-cache%208.png">
+<meta property="article:published_time" content="2020-03-21T11:02:31.000Z">
+<meta property="article:modified_time" content="2020-03-21T12:32:49.045Z">
+<meta property="article:author" content="browntea">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://browntea.club/2020/03/21/multi-level-cache/multi-level-cache/multi-level-cache.png">
+  
+    <link rel="alternate" href="/atom.xml" title="布朗与茶的空间" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">布朗与茶的空间</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">个人博客</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://browntea.club"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-multi-level-cache" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/21/multi-level-cache/" class="article-date">
+  <time datetime="2020-03-21T11:02:31.000Z" itemprop="datePublished">2020-03-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      多级缓存
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>以下信息及图片收集于网络， 此处仅做整合。</p>
+<h1 id="什么是多级缓存"><a href="#什么是多级缓存" class="headerlink" title="什么是多级缓存"></a>什么是多级缓存</h1><hr>
+<p>广泛意义上从请求到返回结果中各个layer都可以缓存数据，从而提高反应速度</p>
+<p><img src="multi-level-cache/multi-level-cache.png" alt="multi-level-cache/multi-level-cache.png"></p>
+<p>一般我们指的服务器端两级/多级缓存框架，都是指的从进程内缓存到数据库访问前的各个级别的缓存</p>
+<a id="more"></a>
+<h3 id="CPU的缓存"><a href="#CPU的缓存" class="headerlink" title="CPU的缓存"></a>CPU的缓存</h3><hr>
+<p>最简单的调整缓存配置图</p>
+<p><img src="multi-level-cache/multi-level-cache%201.png" alt="multi-level-cache/multi-level-cache%201.png"></p>
+<p>三级缓存的处理器</p>
+<p><img src="multi-level-cache/multi-level-cache%202.png" alt="multi-level-cache/multi-level-cache%202.png"></p>
+<p>图3.3 多处理器、多核心、多线程</p>
+<hr>
+<p><img src="multi-level-cache/multi-level-cache%203.png" alt="multi-level-cache/multi-level-cache%203.png"></p>
+<p><img src="multi-level-cache/multi-level-cache%204.png" alt="multi-level-cache/multi-level-cache%204.png"></p>
+<h3 id="Web缓存体系结构"><a href="#Web缓存体系结构" class="headerlink" title="Web缓存体系结构"></a>Web缓存体系结构</h3><hr>
+<p><img src="multi-level-cache/multi-level-cache%205.png" alt="multi-level-cache/multi-level-cache%205.png"></p>
+<p><img src="multi-level-cache/multi-level-cache%206.png" alt="multi-level-cache/multi-level-cache%206.png"></p>
+<p><strong>3.1.1 层次式缓存体系结构</strong></p>
+<p>Harvest项目[3]首先提出了层次式Web缓存体系结构。在层次式缓存体系结构中，Cache在网络呈多级配置，如图1（a）所示。为简单起见，假定有四级：底层Cache、局域层Cache、区域层Cache、广域层Cache。底层是客户/浏览器Cache，当客户端Cache不能满足客户的请求时，该请求被转发到局域层Cache，如果仍然得不到满足，则该请求被转发到区域层Cache直至广域层Cache。如果该请求在各级Cache中都得不到满足，则请求最终被转发到服务器。然后服务器对该请求的响应自顶向下地发送给客户，在沿途的每一个中间层Cache中留下一个副本。请求相同内容的其它请求则自下而上地进行转发，直到在某一级Cache中得到满足。</p>
+<p>层次式缓存体系结构带宽效率高，点击率较高的Web内容可以快速高效地分布到网络中。但该体系结构也存在一些不足[4]：</p>
+<p>（1）建立层次式缓存体系结构，缓存服务器必须配置在网络中关键的访问点上，缓存服务器间需相互合作；</p>
+<p>（2）每一级Cache都会带来额外的延迟；</p>
+<p>（3）高层Cache可能会成为瓶颈并带来较长的排队延迟；</p>
+<p>（4）同一个内容的多个副本被保存在不同的Cache中，整个系统Cache空间利用率不高。</p>
+<p><strong>3.1.2 分布式缓存体系结构</strong></p>
+<p>针对层次式缓存结构的上述缺陷，一些研究者提出了分布式缓存体系结构，在这种结构中，只有低层Cache,如图1（b）所示。文献[5]中的分布式Web缓存结构中，没有超出局域层的中间Cache层，Cache之间相互协作以处理失效。为了确定将客户请求转发给哪一个局域层Cache来获取失效的内容，每一个局域层Cache保留一份其它局域层Cache中缓存内容的目录信息，以便发生失效时将客户请求准确地转发到相应的局域层Cache。缓存阵列路由协议CARP [6]（Cache Array Routing protocol）是一种分布式缓存方案，它将URL空间分割成不同的部分，将每一部分指定给一组松散耦合的Cache组，每个Cache只能缓存具有指定给它的URL的Web内容，从而可以根据客户请求内容的URL来确定将请求转发给哪一个Cache。</p>
+<p>在分布式缓存结构中，大多数的网络流量都发生在网络底层，不容易产生网络拥塞，Cache空间利用率高，且可以更好地实现负载共享，容错性更好。然而，一个大规模的分布式缓存系统的配置可能会遇到几个问题：连接次数较多、带宽要求高、管理困难[4]。</p>
+<p><strong>3.1.3 混合式缓存体系结构</strong></p>
+<p>混合式体系结构如图1（c）所示，同级Cache采用分布式缓存结构，相互合作。Harvest集团设计的互联网缓存协议ICP（the Internet Cache Protocol）支持从RTT最小的父Cache或邻居Cache中获取相应的内容。</p>
+<p><strong>3.1.4 缓存体系结构的优化</strong></p>
+<p>研究表明</p>
+<p>[4]</p>
+<p>层次式缓存体系结构和分布式缓存结构相比，层次式缓存体系结构具有较短的连接时间，因此将较小的文档缓存在中间层Cache中可以减少访问延迟；分布缓存结构具有较短的传输时间和较高的带宽利用率。理想的方案就是将二者结合起来，充分发挥各自的长处，同时减少连接时间和传输时间。</p>
+<p><a href="multi-level-cache/Web.doc">Web缓存技术概述.doc</a></p>
+<h2 id="有赞多级缓存解决方案-TMC"><a href="#有赞多级缓存解决方案-TMC" class="headerlink" title="有赞多级缓存解决方案 TMC"></a>有赞多级缓存解决方案 TMC</h2><hr>
+<p><img src="multi-level-cache/multi-level-cache%207.png" alt="multi-level-cache/multi-level-cache%207.png"></p>
+<p>TMC 整体架构如上图，共分为三层：</p>
+<ul>
+<li>存储层：提供基础的kv数据存储能力，针对不同的业务场景选用不同的存储服务（ codis / zankv / aerospike ）；</li>
+<li>代理层：为应用层提供统一的缓存使用入口及通信协议，承担分布式数据水平切分后的路由功能转发工作；</li>
+<li>应用层：提供统一客户端给应用服务使用，内置“热点探测”、“本地缓存”等功能，对业务透明；</li>
+</ul>
+<p><img src="multi-level-cache/multi-level-cache%208.png" alt="multi-level-cache/multi-level-cache%208.png"></p>
+<p>TMC 本地缓存整体结构分为如下模块：</p>
+<ul>
+<li><strong>Jedis-Client</strong>： Java 应用与缓存服务端交互的直接入口，接口定义与原生 Jedis-Client 无异；</li>
+<li><strong>Hermes-SDK</strong>：自研“热点发现+本地缓存”功能的SDK封装， Jedis-Client 通过与它交互来集成相应能力；</li>
+<li><strong>Hermes服务端集群</strong>：接收 Hermes-SDK 上报的缓存访问数据，进行热点探测，将热点 key 推送给 Hermes-SDK 做本地缓存；</li>
+<li><strong>缓存集群</strong>：由代理层和存储层组成，为应用客户端提供统一的分布式缓存服务入口；</li>
+<li><strong>基础组件</strong>： etcd 集群、 Apollo 配置中心，为 TMC 提供“集群推送”和“统一配置”能力；</li>
+</ul>
+<p>#</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://browntea.club/2020/03/21/multi-level-cache/" data-id="ck81i8ift0000j7sb69ad9c8f" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/21/cache/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">缓存介绍</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/03/21/multi-level-cache/">多级缓存</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/21/cache/">缓存介绍</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 browntea<br>
+       <a href="http://www.beian.miit.gov.cn/" target="_blank">沪ICP备18021205号-1</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
