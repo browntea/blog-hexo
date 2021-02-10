@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 布朗与茶的空间
+subtitle: '个人博客'
+description: '一些个人收集的信息'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: browntea 
+language: zh-Hans
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://browntea.club
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -94,6 +94,12 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: landscape
+
+# Automatically Excerpt. Not recommend.
+# Please use <!-- more --> in the post to control excerpt accurately.
+auto_excerpt:
+  enable: true
+  length: 150
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
