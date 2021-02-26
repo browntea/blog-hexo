@@ -1,0 +1,30 @@
+from harbor.hm.browntea.cn/sync/node:15.10.0
+
+MAINTAINER Abraham Wu
+
+ENV TZ="Asia/Shanghai" HOME="/opt/node15"
+
+WORKDIR ${HOME}
+
+USER root
+
+COPY sources.list /etc/apt/sources.list
+
+RUN	apt-get update && \
+	apt-get install -y nginx && \
+	mkdir -p /opt/node15/public && \
+	rm -rf /var/www/html && \
+	ln -s /opt/node15/public /var/www/html  && \
+	npm install -g npm@7.6.0 --registry https://registry.npm.taobao.org && \
+ 	npm install -g hexo-cli --registry https://registry.npm.taobao.org && \
+  	rm -rf /opt/node15/.npm && \
+	hexo init /tmp/hexo/sample.4.2.0 && \
+	apt-get update && \
+	apt-get install -y nginx && \
+	mkdir -p /opt/node15/public && \
+	rm -rf /var/www/html && \
+	ln -s /opt/node15/public /var/www/html 
+
+EXPOSE 80 4000
+
+ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]

@@ -3,60 +3,67 @@
 <head>
   <meta charset="utf-8">
   
-
   
-  <title>缓存介绍 | 布朗与茶的空间</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>缓存介绍 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="以下信息及图片收集于网络， 此处仅做整合 什么是缓存 缓： 缓冲，缓解矛盾 （不是缓慢，反而应该是除CPU&#x2F;GPU之外最快的） 存：占有储存空间资源 缓存：缓存就是数据交换的缓冲区。临时存贮的那些交换频繁的数据&#x2F;文件，以便于快速的访问。 缓存的介质类型  内存型缓存 文件型缓存 数据库型缓存  ???">
 <meta property="og:type" content="article">
 <meta property="og:title" content="缓存介绍">
-<meta property="og:url" content="http://browntea.club/2020/03/21/cache/index.html">
-<meta property="og:site_name" content="布朗与茶的空间">
+<meta property="og:url" content="http://example.com/2020/03/21/cache/index.html">
+<meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="以下信息及图片收集于网络， 此处仅做整合 什么是缓存 缓： 缓冲，缓解矛盾 （不是缓慢，反而应该是除CPU&#x2F;GPU之外最快的） 存：占有储存空间资源 缓存：缓存就是数据交换的缓冲区。临时存贮的那些交换频繁的数据&#x2F;文件，以便于快速的访问。 缓存的介质类型  内存型缓存 文件型缓存 数据库型缓存  ???">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%201.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%202.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%203.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%204.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%205.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%206.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/v2-e295352c7273887832b6beb185597460_1200x500.jpg">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%207.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%208.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%209.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2010.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2011.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2012.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2013.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2014.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2015.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2016.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2017.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2018.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2019.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2020.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2021.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2022.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2023.png">
-<meta property="og:image" content="http://browntea.club/2020/03/21/cache/cache/cache%2024.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%201.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%202.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%203.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%204.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%205.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%206.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/v2-e295352c7273887832b6beb185597460_1200x500.jpg">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%207.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%208.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%209.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2010.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2011.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2012.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2013.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2014.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2015.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2016.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2017.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2018.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2019.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2020.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2021.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2022.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2023.png">
+<meta property="og:image" content="http://example.com/2020/03/21/cache/cache/cache%2024.png">
 <meta property="article:published_time" content="2020-03-21T09:36:43.000Z">
-<meta property="article:modified_time" content="2020-03-21T12:32:36.133Z">
-<meta property="article:author" content="browntea">
+<meta property="article:modified_time" content="2021-02-24T18:42:14.000Z">
+<meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://browntea.club/2020/03/21/cache/cache/cache.png">
+<meta name="twitter:image" content="http://example.com/2020/03/21/cache/cache/cache.png">
   
-    <link rel="alternate" href="/atom.xml" title="布朗与茶的空间" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
   
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
 
 <body>
   <div id="container">
@@ -66,12 +73,8 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">布朗与茶的空间</a>
+        <a href="/" id="logo">Hexo</a>
       </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">个人博客</a>
-        </h2>
       
     </div>
     <div id="header-inner" class="inner">
@@ -87,19 +90,20 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://browntea.club"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
       </div>
     </div>
   </div>
 </header>
+
       <div class="outer">
-        <section id="main"><article id="post-cache" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-cache" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2020/03/21/cache/" class="article-date">
-  <time datetime="2020-03-21T09:36:43.000Z" itemprop="datePublished">2020-03-21</time>
+  <time class="dt-published" datetime="2020-03-21T09:36:43.000Z" itemprop="datePublished">2020-03-21</time>
 </a>
     
   </div>
@@ -109,14 +113,14 @@
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
+    <h1 class="p-name article-title" itemprop="headline name">
       缓存介绍
     </h1>
   
 
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+    <div class="e-content article-entry" itemprop="articleBody">
       
         <p>以下信息及图片收集于网络， 此处仅做整合</p>
 <h2 id="什么是缓存"><a href="#什么是缓存" class="headerlink" title="什么是缓存"></a>什么是缓存</h2><hr>
@@ -130,7 +134,7 @@
 <li>数据库型缓存</li>
 </ul>
 <p>???</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h1 id="有哪些缓存"><a href="#有哪些缓存" class="headerlink" title="有哪些缓存"></a>有哪些缓存</h1><hr>
 <p>缓存的类型很多， 从访问的开始到结束 ，各个layer理论上都可以有缓存。</p>
@@ -154,7 +158,9 @@
 <pre><code>wuab@iuc01:~$ free -m
               total        used        free      shared  buff/cache   available
 Mem:          31986       20049         551        1330       11385       11815
-Swap:             0           0           0</code></pre><p><img src="cache/v2-e295352c7273887832b6beb185597460_1200x500.jpg" alt="cache/v2-e295352c7273887832b6beb185597460_1200x500.jpg"></p>
+Swap:             0           0           0
+</code></pre>
+<p><img src="cache/v2-e295352c7273887832b6beb185597460_1200x500.jpg" alt="cache/v2-e295352c7273887832b6beb185597460_1200x500.jpg"></p>
 <p>Mem：表示物理内存统计。<br>total：表示物理内存总量(total = used + free)。<br>used：表示总计分配给缓存（包含buffers 与cache ）使用的数量，但其中可能部分缓存并未实际使用。<br>free：未被分配的内存。<br>shared：共享内存。<br>buffers：系统分配但未被使用的buffers数量。<br>cached：系统分配但未被使用的cache数量。<br>-/+ buffers/cache：表示物理内存的缓存统计。<br>used2：也就是第一行中的used – buffers - cached也是实际使用的内存总量。 // used2为第二行<br>free2 = buffers1 + cached1 + free1 // free2为第二行，buffers1等为第一行<br>free2：未被使用的buffers与cache和未被分配的内存之和，这就是系统当前实际可用内存。<br>Swap：表示硬盘上交换分区的使用情况。</p>
 <p>在Free命令中显示的buffer和cache，它们都是占用内存：</p>
 <p>buffer : 作为buffer cache的内存，是块设备的读写缓冲区，更靠近存储设备，或者直接就是disk的缓冲区。</p>
@@ -227,7 +233,7 @@ Swap:             0           0           0</code></pre><p><img src="cache/v2-e2
 <li>先更新数据库，再删除缓存。</li>
 </ul>
 <h2 id="先删除缓存，再更新数据库"><a href="#先删除缓存，再更新数据库" class="headerlink" title="先删除缓存，再更新数据库"></a><strong>先删除缓存，再更新数据库</strong></h2><p>对于一个更新操作简单来说，就是先去各级缓存进行删除，然后更新数据库。这个操作有一个比较大的问题，在对缓存删除完之后，有一个读请求，这个时候由于缓存被删除所以直接会读库，读操作的数据是老的并且会被加载进入缓存当中，后续读请求全部访问的老数据。</p>
-<p><a href="https://camo.githubusercontent.com/cc391f324d9d4e2bb72b2b45c2482a91bc2408a8/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f382f32322f313635363030653437386130616561373f773d3131303926683d36313126663d706e6726733d3536383933" target="_blank" rel="noopener">https://camo.githubusercontent.com/cc391f324d9d4e2bb72b2b45c2482a91bc2408a8/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f382f32322f313635363030653437386130616561373f773d3131303926683d36313126663d706e6726733d3536383933</a></p>
+<p><a target="_blank" rel="noopener" href="https://camo.githubusercontent.com/cc391f324d9d4e2bb72b2b45c2482a91bc2408a8/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f382f32322f313635363030653437386130616561373f773d3131303926683d36313126663d706e6726733d3536383933">https://camo.githubusercontent.com/cc391f324d9d4e2bb72b2b45c2482a91bc2408a8/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f382f32322f313635363030653437386130616561373f773d3131303926683d36313126663d706e6726733d3536383933</a></p>
 <p>对缓存的操作不论成功失败都不能阻塞我们对数据库的操作，那么很多时候删除缓存可以用异步的操作，但是先删除缓存不能很好的适用于这个场景。</p>
 <p>先删除缓存也有一个好处是，如果对数据库操作失败了，那么由于先删除的缓存，最多只是造成Cache Miss。</p>
 <h2 id="4先更新数据库，再删除缓存-推荐"><a href="#4先更新数据库，再删除缓存-推荐" class="headerlink" title="4先更新数据库，再删除缓存(推荐)"></a>4<strong>先更新数据库，再删除缓存(推荐)</strong></h2><p>如果我们使用更新数据库，再删除缓存就能避免上面的问题。但是同样的引入了新的问题,试想一下有一个数据此时是没有缓存的，所以查询请求会直接落库，更新操作在查询请求之后，但是更新操作删除数据库操作在查询完之后回填缓存之前，就会导致我们缓存中和数据库出现缓存不一致。</p>
@@ -284,7 +290,7 @@ Swap:             0           0           0</code></pre><p><img src="cache/v2-e2
 </ul>
 <h2 id="10-缓存污染"><a href="#10-缓存污染" class="headerlink" title="10 缓存污染"></a>10 缓存污染</h2><p>缓存污染一般出现在我们使用本地缓存中，可以想象，在本地缓存中如果你获得了缓存，但是你接下来修改了这个数据，但是这个数据并没有更新在数据库，这样就造成了缓存污染:</p>
 <p>上面的代码就造成了缓存污染，通过id获取Customer，但是需求需要修改Customer的名字，所以开发人员直接在取出来的对象中直接修改，这个Customer对象就会被污染，其他线程取出这个数据就是错误的数据。</p>
-<p><a href="https://camo.githubusercontent.com/e08f244bd67bbc9ec2a062e20f609923d3df3f40/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f382f32322f313635363230396234306430376164653f773d3132303026683d32393626663d706e6726733d3736323537" target="_blank" rel="noopener">https://camo.githubusercontent.com/e08f244bd67bbc9ec2a062e20f609923d3df3f40/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f382f32322f313635363230396234306430376164653f773d3132303026683d32393626663d706e6726733d3736323537</a></p>
+<p><a target="_blank" rel="noopener" href="https://camo.githubusercontent.com/e08f244bd67bbc9ec2a062e20f609923d3df3f40/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f382f32322f313635363230396234306430376164653f773d3132303026683d32393626663d706e6726733d3736323537">https://camo.githubusercontent.com/e08f244bd67bbc9ec2a062e20f609923d3df3f40/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f382f32322f313635363230396234306430376164653f773d3132303026683d32393626663d706e6726733d3736323537</a></p>
 <p>要想避免这个问题需要开发人员从编码上注意，并且代码必须经过严格的review，以及全方位的回归测试，才能从一定程度上解决这个问题。</p>
 <h2 id="11-序列化"><a href="#11-序列化" class="headerlink" title="11 序列化"></a>11 序列化</h2><p>序列化是很多人都不注意的一个问题，很多人忽略了序列化的问题，上线之后马上报出一下奇怪的错误异常，造成了不必要的损失，最后一排查都是序列化的问题。列举几个序列化常见的问题:</p>
 <ol>
@@ -294,10 +300,14 @@ Swap:             0           0           0</code></pre><p><img src="cache/v2-e2
 </li>
 <li><p>不同的JVM的序列化不同，如果你的缓存有不同的服务都在共同使用(不提倡)，那么需要注意不同JVM可能会对Class内部的Field排序不同，而影响序列化。比如下面的代码，在Jdk7和Jdk8中对象A的排列顺序不同，最终会导致反序列化结果出现问题:</p>
 <p> //jdk 7<br> class A{</p>
-<pre><code>int a;
-int b;</code></pre><p> }<br> //jdk 8<br> class A{</p>
-<pre><code>int b;
-int a;</code></pre><p> }</p>
+<pre><code> int a;
+ int b;
+</code></pre>
+<p> }<br> //jdk 8<br> class A{</p>
+<pre><code> int b;
+ int a;
+</code></pre>
+<p> }</p>
 </li>
 </ol>
 <p>序列化的问题必须得到重视，解决的办法有如下几点:</p>
@@ -308,9 +318,9 @@ int a;</code></pre><p> }</p>
 </ol>
 <h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><hr>
 <h2 id="Cache-和-Buffer-的区别"><a href="#Cache-和-Buffer-的区别" class="headerlink" title="Cache 和 Buffer 的区别"></a>Cache 和 Buffer 的区别</h2><p><strong>Buffer</strong>（缓冲区）是系统两端处理<strong>速度平衡</strong>（从长时间尺度上看）时使用的。它的引入是为了减小短期内突发I/O的影响，起到<strong>流量整形</strong>的作用。比如生产者——消费者问题，他们产生和消耗资源的速度大体接近，加一个buffer可以抵消掉资源刚产生/消耗时的突然变化。2、<strong>Cache</strong>（缓存）则是系统两端处理<strong>速度不匹配</strong>时的一种<strong>折衷策略</strong>。因为CPU和memory之间的速度差异越来越大，所以人们充分利用数据的局部性（locality）特征，通过使用存储系统分级（memory hierarchy）的策略来减小这种差异带来的影响。3、假定以后存储器访问变得跟CPU做计算一样快，cache就可以消失，但是buffer依然存在。比如从网络上下载东西，瞬时速率可能会有较大变化，但从长期来看却是稳定的，这样就能通过引入一个buffer使得OS接收数据的速率更稳定，进一步减少对磁盘的伤害。4、TLB（Translation Lookaside Buffer，翻译后备缓冲器）名字起错了，其实它是一个cache.</p>
-<p>作者：知乎用户链接：<a href="https://www.zhihu.com/question/26190832/answer/32387918来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。" target="_blank" rel="noopener">https://www.zhihu.com/question/26190832/answer/32387918来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</a></p>
+<p>作者：知乎用户链接：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/26190832/answer/32387918%E6%9D%A5%E6%BA%90%EF%BC%9A%E7%9F%A5%E4%B9%8E%E8%91%97%E4%BD%9C%E6%9D%83%E5%BD%92%E4%BD%9C%E8%80%85%E6%89%80%E6%9C%89%E3%80%82%E5%95%86%E4%B8%9A%E8%BD%AC%E8%BD%BD%E8%AF%B7%E8%81%94%E7%B3%BB%E4%BD%9C%E8%80%85%E8%8E%B7%E5%BE%97%E6%8E%88%E6%9D%83%EF%BC%8C%E9%9D%9E%E5%95%86%E4%B8%9A%E8%BD%AC%E8%BD%BD%E8%AF%B7%E6%B3%A8%E6%98%8E%E5%87%BA%E5%A4%84%E3%80%82">https://www.zhihu.com/question/26190832/answer/32387918来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</a></p>
 <p>Buffer不是缓存，国内常用的翻译是缓冲区。其次，大部分场景中，Buffer是特指内存中临时存放的IO设备数据——包括读取和写入；而Cache的用处很多——很多IO设备（例如硬盘、RAID卡）上都有Cache，CPU内部也有Cache，浏览器也有Cache。Buffer并非用于提高性能，而Cache的目的则是提高性能。涉及到IO设备读写的场景中，Cache的一部分本身就是Buffer的一种。如果说某些场合Buffer可以提升IO设备的读写性能，只不过是因为Buffer本身是Cache系统的一部分，性能提升来自于Cache机制。Buffer占用的内存不能回收，如果被强行回收会出现IO错误。Cache占用的内存，除实现Buffer的部分外都可以回收，代价则是下一次读取需要从数据的原始位置（通常是性能更低的设备）读取。在IO读写过程中，任何数据的读写都必然会产生Buffer，但根据Cache算法，可能会有相当部分数据不会被Cache。</p>
-<p>作者：木头龙链接：<a href="https://www.zhihu.com/question/26190832/answer/825301105来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。" target="_blank" rel="noopener">https://www.zhihu.com/question/26190832/answer/825301105来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</a></p>
+<p>作者：木头龙链接：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/26190832/answer/825301105%E6%9D%A5%E6%BA%90%EF%BC%9A%E7%9F%A5%E4%B9%8E%E8%91%97%E4%BD%9C%E6%9D%83%E5%BD%92%E4%BD%9C%E8%80%85%E6%89%80%E6%9C%89%E3%80%82%E5%95%86%E4%B8%9A%E8%BD%AC%E8%BD%BD%E8%AF%B7%E8%81%94%E7%B3%BB%E4%BD%9C%E8%80%85%E8%8E%B7%E5%BE%97%E6%8E%88%E6%9D%83%EF%BC%8C%E9%9D%9E%E5%95%86%E4%B8%9A%E8%BD%AC%E8%BD%BD%E8%AF%B7%E6%B3%A8%E6%98%8E%E5%87%BA%E5%A4%84%E3%80%82">https://www.zhihu.com/question/26190832/answer/825301105来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</a></p>
 <h2 id="内存数据库与内存共享技术"><a href="#内存数据库与内存共享技术" class="headerlink" title="内存数据库与内存共享技术"></a>内存数据库与内存共享技术</h2><p><img src="cache/cache%2021.png" alt="cache/cache%2021.png"></p>
 <h2 id="EHCACHE"><a href="#EHCACHE" class="headerlink" title="EHCACHE"></a>EHCACHE</h2><p><img src="cache/cache%2022.png" alt="cache/cache%2022.png"></p>
 <p><img src="cache/cache%2023.png" alt="cache/cache%2023.png"></p>
@@ -319,7 +329,8 @@ int a;</code></pre><p> }</p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://browntea.club/2020/03/21/cache/" data-id="ck81f68t8000049sb7l1s20j1" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/03/21/cache/" data-id="cklmajlxy00022nvoamvv9wf3" data-title="缓存介绍" class="article-share-link">Share</a>
+      
       
       
     </footer>
@@ -343,6 +354,7 @@ int a;</code></pre><p> }</p>
   
 </article>
 
+
 </section>
         
           <aside id="sidebar">
@@ -357,9 +369,9 @@ int a;</code></pre><p> }</p>
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
     </div>
   </div>
 
@@ -367,13 +379,9 @@ int a;</code></pre><p> }</p>
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2021/02/25/Jenkins-Pipeline/">Jenkins Pipeline</a>
-          </li>
         
           <li>
             <a href="/2020/03/21/multi-level-cache/">多级缓存</a>
@@ -395,8 +403,8 @@ int a;</code></pre><p> }</p>
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2021 browntea<br>
-       <a href="http://www.beian.miit.gov.cn/" target="_blank">沪ICP备18021205号-1</a>
+      &copy; 2021 John Doe<br>
+       <a href="http://beian.miit.gov.cn/" target="_blank">沪ICP备18021205号-1</a>
     </div>
   </div>
 </footer>
@@ -410,19 +418,19 @@ int a;</code></pre><p> }</p>
 </nav>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
 
 
   
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script src="/fancybox/jquery.fancybox.min.js"></script>
 
 
 
 
 <script src="/js/script.js"></script>
+
 
 
 
